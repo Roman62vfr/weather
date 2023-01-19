@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Список заявок</title>
+  </head>
+  <body>
+    <p>История наблюдения:</p>
+    {% for str in data %}
+    <p>{{ str }} в Рязани {{ data[str]['weather'] }} температура {{ data[str]['t'] }}</p>
+    {% endfor %}
+  </body>
+</html>
